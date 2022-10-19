@@ -1,0 +1,17 @@
+ruby-spring-watcher-listen (2.0.1-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 23:57:44 +0100
+
+ruby-spring-watcher-listen (2.0.1-1) unstable; urgency=medium
+
+  [ Sruthi Chandran ]
+  * Initial release (Closes: #918597)
+
+  [ Pirate Praveen ]
+  * Disable tests
+  * Update description
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 07 Jan 2019 23:27:43 +0530

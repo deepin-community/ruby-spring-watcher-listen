@@ -1,0 +1,11 @@
+We should use apt to install dependencies
+
+--- a/test/helper.rb
++++ b/test/helper.rb
+@@ -1,6 +1,5 @@
+ $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+ 
+-require "bundler/setup"
+ require "spring/test"
+ require "minitest/autorun"
+ 

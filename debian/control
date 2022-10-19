@@ -1,0 +1,39 @@
+Source: ruby-spring-watcher-listen
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>,
+ Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-listen (<< 4.0),
+               ruby-listen (>= 2.7),
+               ruby-spring (<< 3.0),
+               ruby-spring (>= 1.2),
+               ruby-activesupport
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-spring-watcher-listen.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-spring-watcher-listen
+Homepage: https://github.com/jonleighton/spring-watcher-listen
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-spring-watcher-listen
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-listen (<< 4.0),
+         ruby-listen (>= 2.7),
+         ruby-spring (<< 3.0),
+         ruby-spring (>= 1.2),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Makes spring watch files using the listen library
+ This library makes Spring watch the filesystem for changes using Listen rather
+ than by polling the filesystem.
+ .
+ On larger projects this means spring will be more responsive, more accurate
+ and use less cpu on local filesystems.
+ .
+ NFS, shared VM folders and user file systems will still need polling.
